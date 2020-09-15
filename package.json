@@ -11,7 +11,9 @@
 		"cors": "^2.8.5",
 		"express": "^4.17.1",
 		"mongodb": "^3.6.1",
-		"mongoose": "^5.10.3"
+		"mongoose": "^5.10.3",
+		"shortid": "^2.2.15",
+		"valid-url": "^1.0.9"
 	},
 	"engines": {
 		"node": "12.18.3"
@@ -25,5 +27,21 @@
 		"hyperdev",
 		"express"
 	],
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"@abhijithvijayan/eslint-config": "^2.5.5",
+		"@abhijithvijayan/eslint-config-airbnb": "^1.0.2",
+		"@typescript-eslint/eslint-plugin": "^3.10.1",
+		"@typescript-eslint/parser": "^3.10.1",
+		"babel-eslint": "^10.1.0",
+		"eslint": "^7.9.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-jsx-a11y": "^6.3.1",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-react": "^7.20.6",
+		"eslint-plugin-react-hooks": "^4.1.2",
+		"prettier": "^2.1.1"
+	}
 }
