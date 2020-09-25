@@ -1,74 +1,69 @@
-/****** Main Styling ******/
+@import url("https://fonts.googleapis.com/css?family=Russo+One&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 body {
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	color: #222;
-	background-color: #FaFaFa;
-	text-align: center;
-	line-height: 1.4em;
+  background: #11232e;
+  font-family: -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.container {
-	padding: 0;
-	margin-top: 40px;
-}
-
-h3 {
-  margin-top: 30px;
-}
-
-.footer {
-	margin-top: 40px;
-}
-
-.user-stories {
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  text-align: justify;
-  max-width: 700px;
-  margin: 15px auto;
-}
-code {
-  font-family: monospace;
-  padding: 2px;
-  color: black;
-  background-color: #fff;
-}
-ol {
-	list-style-position: inside;
-}
-ul {
-	list-style-type: none;
+  width: 750px;
+  height: 30px;
+  margin: 100px auto 0px auto;
+  border: 1px solid black;
+  box-shadow: 1px 1px 10px 2px #85ff81;
+  color: white;
+  background: #0a273a;
+  font-family: "Russo One";
 }
 
-li {
-  margin-bottom: 0.5em;
-}
-.user-stories li {
-  margin-bottom: 1em;
+#content-wrapper {
+  width: 750px;
+  height: 450px;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid black;
+  border-top: none;
+  box-shadow: 1px 1px 10px 2px #85ff81;
+  color: #fce96b;
+  background: #0d354b;
 }
 
-a {
-	color: #2574A9;
+.description {
+  display: inline-block;
+  color: #ffb139;
+  font-family: "Russo One";
+}
+
+.description-span {
+  border-bottom: 1px solid #ffb139;
 }
 
 form {
-  border: solid 1px black;
-  border-radius: 5px;
-  margin: 10px auto;
-  padding: 20px;
-  max-width: 600px;
+  /* display: flex;
+justify-content: center;
+align-items: center; */
+  margin: 50px 0px 0px 0px;
 }
 
-label {
-  margin-right: 10px;
+#url_input {
+  width: 300px;
 }
 
-input {
-  padding: 5px;
+li {
+  list-style-type: none;
 }
 
-input[type=text] {
-  width: 220px;
-  text-align: center;
+ul {
+  padding-left: 30px;
 }
