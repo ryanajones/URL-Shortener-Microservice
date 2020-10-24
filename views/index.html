@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../public/style.css" />
-    <title>URL Shortener Microservice</title>
-  </head>
-  <body>
-    <div id="title">URL SHORTENER MICROSERVICE</div>
-    <div id="content-wrapper">
-      <p class="description" style="padding-top: 10px">
-        <span class="description-span">DESCRIPTION</span> :
-      </p>
-      <p style="margin: 10px 0px 0px 30px">
-        Enter a full length URL into the textbox to receive a shortened URL.
-        When visiting the shortened URL you will be redirected to the original
-        URL.
-      </p>
 
-      <form action="api/shorturl/new" method="post">
-        <ul>
-          <li>
-            <label for="url">Enter URL:</label>
-            <input
-              type="text"
-              id="url_input"
-              name="url"
-              value="https://www.freecodecamp.com"
-            />
-            <button type="submit">Submit</button>
-          </li>
-        </ul>
-      </form>
-      <p class="description" style="margin-top: 35px">
-        <span class="description-span">EXAMPLE USAGE</span> :
-      </p>
-      <p style="margin: 10px 0px 0px 30px">
-        Click -->
-        <a href="./api/shorturl/4mNEO3biF" style="color: #fce96b"
-          >[project_url] /api/shorturl/4mNEO3biF</a
-        >
-      </p>
-      <p class="description" style="margin-top: 35px">
-        <span class="description-span">WILL REDIRECT TO</span> :
-      </p>
-      <p style="margin: 10px 0px 0px 30px">
-        https://www.freecodecamp.com
-      </p>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../public/style.css" />
+  <title>URL Shortener Microservice</title>
+</head>
+
+<body>
+  <div id="title">URL SHORTENER MICROSERVICE</div>
+  <div id="content-wrapper">
+    <p class="description" style="padding-top: 10px">
+      <span class="description-span">DESCRIPTION</span> :
+    </p>
+    <p style="margin: 10px 0px 0px 30px">
+      Enter a full length URL into the textbox to receive a shortened URL.
+      When visiting the shortened URL you will be redirected to the original
+      URL.
+    </p>
+
+    <form action="api/shorturl/new" method="post">
+      <ul>
+        <li>
+          <label for="url">Enter URL:</label>
+          <input type="text" id="url_input" name="url" value="https://www.freecodecamp.com" />
+          <button type="submit">Submit</button>
+        </li>
+      </ul>
+    </form>
+    <p class="description" style="margin-top: 35px">
+      <span class="description-span">EXAMPLE USAGE</span> :
+    </p>
+    <p style="margin: 10px 0px 0px 30px">
+      Click -->
+      <a href="./api/shorturl/4mNEO3biF" style="color: #fce96b">[project_url] /api/shorturl/4mNEO3biF</a>
+    </p>
+    <p class="description" style="margin-top: 35px">
+      <span class="description-span">WILL REDIRECT TO</span> :
+    </p>
+    <p style="margin: 10px 0px 0px 30px">
+      https://www.freecodecamp.com
+    </p>
+  </div>
+  <div></div>
+</body>
+
 </html>

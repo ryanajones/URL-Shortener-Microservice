@@ -39,6 +39,7 @@ app.get('/', function (req, res) {
 app.post('/api/shorturl/new', async (req, res) => {
   const { url } = req.body;
   const shortURL = shortID.generate();
+
   if (!validURL.isWebUri(url)) {
     res.status(401).json({
       error: 'invalid URL',
