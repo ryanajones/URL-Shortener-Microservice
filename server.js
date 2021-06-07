@@ -7,9 +7,10 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const validURL = require('valid-url');
 const shortID = require('shortid');
+require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 // MongoDB and mongoose connect
 mongoose.connect(process.env.MONGO_URI, {
@@ -37,10 +38,10 @@ app.get('/', function (req, res) {
 app.post('/api/shorturl/new', async (req, res) => {
   const { url } = req.body;
   const shortURL = shortID.generate();
-
-  if (!validURL.isWebUri(url)) {
-    res.status(401).json({
-      error: 'invalid URL',
+  console.log(validURL.isUri(url));
+  if (validURL.isWebUri(url) === undefined) {
+    res.json({
+      error: 'invalid url',
     });
   } else {
     try {
@@ -49,8 +50,8 @@ app.post('/api/shorturl/new', async (req, res) => {
       });
       if (findOne) {
         res.json({
-          originalURL: findOne.originalURL,
-          shortURL: findOne.shortURL,
+          original_url: findOne.originalURL,
+          short_url: findOne.shortURL,
         });
       } else {
         findOne = new URL({
@@ -59,8 +60,8 @@ app.post('/api/shorturl/new', async (req, res) => {
         });
         await findOne.save();
         res.json({
-          originalURL: findOne.originalURL,
-          shortURL: findOne.shortURL,
+          original_url: findOne.originalURL,
+          short_url: findOne.shortURL,
         });
       }
     } catch (err) {

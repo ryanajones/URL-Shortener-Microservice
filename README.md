@@ -1,10 +1,6 @@
 # URL Shortener Microservice
 
-> Submit a full length URL into the text box to receive a JSON response of a shortened URL to use.
-
-> If you submit an invalid URL that doesn't follow the `https://www.example.com` format, the JSON response will contain an error instead. 
-
-> Visiting the shortened URL e.g. `[project_url] /api/shorturl/4mNEO3biF` will redirect you to the original link.
+Submitting a full length URL into the text box generates a JSON response of a shortened URL to use. Submitting an invalid URL that doesn't follow the `https://www.example.com` format results in a JSON response containing an error instead. Node.js and Express.js are used to handle HTTP requests to the back-end. Mongoose.js is used in tandem with MongoDB to store converted short URLs for later use.
 
 ## Technologies Used
 
